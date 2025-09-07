@@ -1,0 +1,28 @@
+{
+  "name": "internshala-bot-suite",
+  "version": "1.0.0",
+  "description": "Professional Internshala automation suite with chat extraction and internship scraping",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "main": "node main.js",
+    "chat": "node working-bot.js",
+    "test-simple": "node test-simple-extraction.js",
+    "headful": "set HEADFUL=true && node main.js",
+    "reset-cookies": "if exist data\\cookies.json del data\\cookies.json && echo Cookies cleared",
+    "reset-data": "if exist data rmdir /s /q data && echo All data cleared",
+    "install-playwright": "npx playwright install chromium"
+  },
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "dotenv": "^16.3.1",
+    "axios": "^1.6.0",
+    "winston": "^3.11.0",
+    "commander": "^11.1.0",
+    "openai": "^4.20.0"
+  },
+  "keywords": ["playwright", "automation", "mcp", "internshala", "chat"],
+  "author": "",
+  "license": "MIT"
+}
