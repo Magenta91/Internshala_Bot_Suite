@@ -277,13 +277,13 @@ In natural language mode, you can use commands like:
 #### 1. **Messages CSV** (`chat_history_*.csv`)
 ```csv
 Message ID,Conversation ID,Sender,Message Type,Message Text,Timestamp,Contains Links,Message Length,Element Class
-msg_1,c-105388670,me,sent,"Thanks for considering my application...",2025-09-06T21:19:59.571Z,Yes,156,message_inner
+msg_1,c-105,me,sent,"Thanks for considering my application...",2025-09-06T21:19:59.571Z,Yes,156,message_inner
 ```
 
 #### 2. **Conversations CSV** (`conversations_*.csv`)
 ```csv
 Conversation ID,Message Count,Last Activity,Status,Participants
-c-105388670,10,2025-09-06T21:19:59.574Z,extracted,2
+c-10,10,2025-09-06T21:19:59.574Z,extracted,2
 ```
 
 #### 3. **Statistics CSV** (`chat_stats_*.csv`)
@@ -567,3 +567,4 @@ MIT License - For educational and personal use only.
 
 
 **🎉 Ready to automate your Internshala workflow!**
+
