@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
-/**
- * Main Internshala Bot - Integrated Chat & Internship Scraper
- */
+
 
 import { WorkingInternshalaBot } from './working-bot.js';
 import { InternshipScraper } from './src/internship-scraper.js';
@@ -85,12 +83,12 @@ class MainInternshalaBot {
 
       console.log('🧠 Processing your request...');
       
-      // Use NLP to determine intent
+    
       const intent = await this.nlpProcessor.processCommand(userInput);
       
       console.log(`🎯 Detected intent: ${intent.action} (confidence: ${(intent.confidence * 100).toFixed(1)}%)`);
 
-      // Execute based on intent
+     
       switch (intent.action) {
         case 'extract_chats':
           await this.handleChatExtraction();
@@ -218,7 +216,7 @@ class MainInternshalaBot {
             break;
         }
 
-        // Wait before showing menu again
+       
         console.log('\nPress Enter to continue...');
         const readline = await import('readline');
         const rl = readline.createInterface({
@@ -254,7 +252,7 @@ class MainInternshalaBot {
   }
 }
 
-// Handle process termination
+
 process.on('SIGINT', async () => {
   console.log('\n🛑 Received interrupt signal. Cleaning up...');
   process.exit(0);
@@ -265,14 +263,14 @@ process.on('SIGTERM', async () => {
   process.exit(0);
 });
 
-// Main execution
+
 async function main() {
   console.log('🚀 Starting main application...');
   const mainBot = new MainInternshalaBot();
   await mainBot.run();
 }
 
-// Run if called directly
+
 const isMainModule = process.argv[1] && process.argv[1].endsWith('main.js');
 if (isMainModule) {
   console.log('📍 Main script detected, starting...');
@@ -283,5 +281,6 @@ if (isMainModule) {
 } else {
   console.log('📍 Main script imported as module');
 }
+
 
 export { MainInternshalaBot };
