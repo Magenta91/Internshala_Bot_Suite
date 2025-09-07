@@ -2,7 +2,7 @@
 
 ## 📋 Project Overview
 
-The **Internshala Bot Suite** is a comprehensive automation solution for Internshala that combines chat message extraction and internship scraping capabilities. Built with Node.js, Playwright, and AI integration, it provides a professional-grade tool for automating Internshala workflows. This is an open-source automation tool I built for Internshala.com, a popular platform for internships in India. It's a professional-grade bot suite designed to automate two main tasks: extracting chat messages from your Internshala conversations and scraping internship listings based on custom filters. The project is written in Node.js and uses libraries like Playwright for browser automation, Apify for web scraping, and optional AI integrations (like Google's Gemini API) for natural language processing (NLP)
+ This is an open-source automation tool I built for Internshala.com, a popular platform for internships in India. It's a professional-grade bot suite designed to automate two main tasks: extracting chat messages from your Internshala conversations and scraping internship listings based on custom filters. The project is written in Node.js and uses libraries like Playwright for browser automation, Apify for web scraping, and optional AI integrations (like Google's Gemini API) for natural language processing (NLP)
 
 ## 🎯 Key Features
 
@@ -474,3 +474,4 @@ For issues and questions:
 ---
 
 **The Internshala Bot Suite is production-ready and fully functional!** 🎉
+
